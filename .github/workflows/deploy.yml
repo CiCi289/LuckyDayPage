@@ -17,7 +17,7 @@ jobs:
           dotnet-version: '8.0.x' # Update this to match your project's .NET version
 
       - name: Publish .NET Project
-        run: dotnet publish -c Release -o release --nologo
+        run: dotnet publish LuckyDrawApp.csproj -c Release -o release --nologo
 
       - name: Change base-tag in index.html
         run: sed -i 's/<base href="\/" \/>/<base href="\/LuckyDayPage\/" \/>/g' release/wwwroot/index.html
