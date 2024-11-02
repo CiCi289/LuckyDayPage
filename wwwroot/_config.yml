@@ -1,3 +1,9 @@
-include:   - "_framework"   - "_bin"
+
+
+include:
+  - "_framework"
+  - "_content"
+  - "_bin"
+  - "css"
 
 
